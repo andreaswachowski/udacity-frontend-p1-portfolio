@@ -12,8 +12,39 @@ body {
   font-weight: 100;
 }
 
-.title-super {
-  font-size: 60px;
+/* Media queries used according to
+ * http://stackoverflow.com/questions/18424798/twitter-bootstrap-3-how-to-use-media-queries
+ *
+ * Better solution would be to use LESS or SCSS/SASS to avoid hardcoding the max-/min-width.
+ */
+@media (max-width: 480px) {
+  .br-xs {
+    display: inline-block;
+  }
+
+  .title-md {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 991px) {
+  .br-xs {
+    display: none;
+  }
+
+  .title-md {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 992px) {
+  .br-xs {
+    display: none;
+  }
+
+  .title-md {
+    font-size: 60px;
+  }
 }
 
 .title-logo {

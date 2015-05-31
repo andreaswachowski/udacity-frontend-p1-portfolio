@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Andreas Wachowski's homepage</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300'
+                           rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-2">
+          <img src="images/profile_picture.png" class="title-logo" alt="logo">
+        </div>
+        <div class="col-xs-10 text-right">
+          <h1 class="title-super text-thin text-uppercase"> Andreas Wachowski</h1>
+          <h4 class="text-lowercase">web and ios software development</h4>
+        </div>
+      </div>
+      <div class="row"><div class="col-md-12"><hr></div></div>
+      <div class="row">
+        <div class="col-md-12">
+          <img src="images/dense-forest.jpg" class="img-responsive" alt="header image">
+        </div>
+      </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="text-muted">Featured Work</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <img class="img-responsive center-block" src="images/pianochords.png" alt="piano chords"
+        data-toggle="modal"
+        data-target="#pianochords">
+        <h3>Piano Chords</h3>
+        <p><a
+          href="https://github.com/andreaswachowski/pianochords">https://github.com/andreaswachowski/pianochords</a></p>
+      </div>
+      <div class="col-md-4 text-center">
+        <img class="img-responsive center-block" src="images/dotfiles.png" alt="dot files"
+        data-toggle="modal"
+        data-target="#dotfiles">
+        <h3>Dot Files</h3>
+        <p><a href="https://github.com/andreaswachowski/dotfiles">https://github.com/andreaswachowski/dotfiles</a></p>
+      </div>
+    </div>
+    <div class="row"><div class="col-md-12"><hr></div></div>
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-2 text-center"><p><a href="http://de.linkedin.com/in/andreaswachowski">LinkedIn</a></p></div>
+      <div class="col-md-2 text-center"><p><a href="https://www.xing.com/profile/Andreas_Wachowski">XING</a></p></div>
+      <div class="col-md-2 text-center"><p><a href="https://github.com/andreaswachowski">GitHub</a></p></div>
+    </div>
+    </div>
+
+    <!-- Modals -->
+    <div class="modal fade" id="pianochords" tabindex="-1" role="dialog" aria-labelledby="modalLabelForPianoChords" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="modalLabelForPianoChords">Piano Chords</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="images/pianochords.png" alt="pianochords">
+            A command line tool written in Ruby to generate <a
+              href="http://ankisrs.net/">Anki</a> flash cards to learn basic
+            chord voicings for keyboard instruments. Detailed description <a
+              href="https://github.com/andreaswachowski/pianochords">on
+              Github</a>.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="dotfiles" tabindex="-1" role="dialog" aria-labelledby="modalLabelForDotFiles" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="modalLabelForDotFiles">Dot Files</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="images/dotfiles.png" alt="dot files">
+            Configuration files for bash, vim, etc. To start working on a
+            new machine, I clone the repository into <code>~/dotfiles</code> and execute
+            <code>setup.sh</code>.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
